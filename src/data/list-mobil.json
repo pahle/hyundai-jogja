@@ -1,0 +1,194 @@
+[
+  {
+    "name": "Stargazer",
+    "image": "/stargazer.webp",
+    "basePrice": 252600000,
+    "types": [
+      {
+        "name": "New Active MT",
+        "price": 252600000
+      },
+      {
+        "name": "New Active IVT",
+        "price": 265600000
+      },
+      {
+        "name": "Essential MT",
+        "price": 264400000
+      },
+      {
+        "name": "Essential IVT",
+        "price": 278300000
+      },
+      {
+        "name": "Style IVT",
+        "price": 308300000
+      },
+      {
+        "name": "New Prime",
+        "price": 323900000
+      }
+    ],
+    "addition": []
+  },
+  {
+    "name": "Stargazer X",
+    "image": "/stargazer-x.webp",
+    "basePrice": 338800000,
+    "types": [
+      {
+        "name": "Style IVT",
+        "price": 338800000
+      },
+      {
+        "name": "Prime IVT",
+        "price": 349400000
+      }
+    ],
+    "addition": [
+      {
+        "name": "Captain Seat",
+        "price": 1000000
+      },
+      {
+        "name": "Two Tone",
+        "price": 1500000
+      },
+      {
+        "name": "Gold Matte / White Matte",
+        "price": 3500000
+      }
+    ]
+  },
+  {
+    "name": "Creta",
+    "image": "/creta.webp",
+    "basePrice": 300300000,
+    "types": [
+      {
+        "name": "Active MT",
+        "price": 300300000
+      },
+      {
+        "name": "Trend MT",
+        "price": 322300000
+      },
+      {
+        "name": "Trend IVT",
+        "price": 343500000
+      },
+      {
+        "name": "Style IVT",
+        "price": 386800000
+      },
+      {
+        "name": "Prime IVT",
+        "price": 419800000
+      }
+    ],
+    "addition": [
+      {
+        "name": "Two Tone",
+        "price": 3000000
+      }
+    ]
+  },
+  {
+    "name": "Santa FE",
+    "image": "/santa-fe.webp",
+    "basePrice": 628000000,
+    "types": [
+      {
+        "name": "G 2.5 Prime",
+        "price": 628000000
+      },
+      {
+        "name": "G 2.5 Signature",
+        "price": 711700000
+      },
+      {
+        "name": "D 2.2 Prime",
+        "price": 692200000
+      },
+      {
+        "name": "D 2.2 Signature",
+        "price": 764700000
+      }
+    ],
+    "addition": []
+  },
+  {
+    "name": "Staria",
+    "image": "/staria.webp",
+    "basePrice": 931000000,
+    "types": [
+      {
+        "name": "Signature 9",
+        "price": 931000000
+      },
+      {
+        "name": "Signature 7",
+        "price": 1067500000
+      }
+    ],
+    "addition": []
+  },
+  {
+    "name": "Palisade",
+    "image": "/palisade.webp",
+    "basePrice": 1047500000,
+    "types": [
+      {
+        "name": "D 2.2 AT Signature",
+        "price": 1047500000
+      }
+    ],
+    "addition": []
+  },
+  {
+    "name": "Ioniq 5",
+    "image": "/ioniq-5.webp",
+    "basePrice": 784000000,
+    "types": [
+      {
+        "name": "Prime STD",
+        "price": 784000000
+      },
+      {
+        "name": "Prime Long Range",
+        "price": 825000000
+      },
+      {
+        "name": "Signature STD",
+        "price": 847000000
+      },
+      {
+        "name": "Signature Long Range",
+        "price": 897000000
+      }
+    ],
+    "addition": [
+      {
+        "name": "Gold Matte",
+        "price": 3500000
+      }
+    ]
+  },
+  {
+    "name": "IONIQ 6",
+    "image": "/ioniq-6.webp",
+    "basePrice": 1213500000,
+    "types": [
+      {
+        "name": "Long Range AWD",
+        "price": 1213500000
+      }
+    ],
+    "addition": [
+      {
+        "name": "Gold Matte / White Matte",
+        "price": 3500000
+      }
+    ]
+  }
+]
