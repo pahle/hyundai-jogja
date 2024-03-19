@@ -1,0 +1,21 @@
+[
+    {
+        "slug": "the-shawshank-redemption",
+        "title": "The Shawshank Redemption",
+        "image": "/stargazer.webp",
+        "description": "lorem ipsum dolor sit amet"
+    },
+    {
+        "slug": "the-godfather",
+        "title": "The Godfather",
+        "image": "/stargazer-x.webp",
+        "description": "lorem ipsum dolor sit amet"
+    },
+    {
+        "slug": "the-godfather-part-ii",
+        "title": "The Dark Knight",
+        "image": "/creta.webp",
+        "description": "lorem ipsum dolor sit amet"
+    }
+  ]
+  

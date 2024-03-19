@@ -48,7 +48,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang='id-ID'>
       <body className={GeistSans.className}>
         <Navbar />
-        {children}
+        <div className='min-h-[90vh]'>{children}</div>
         <Footer />
       </body>
     </html>

@@ -8,7 +8,7 @@ import listMobil from '~/data/list-mobil.json'
 const title = 'Daftar Harga Promo'
 const URL = `${ENV.NEXT_PUBLIC_WEBSITE_URL}/promo`
 const description =
-  'Daftar harga promo mobil Honda terbaru. Dapatkan penawaran terbaik untuk pembelian mobil Honda di dealer resmi Honda Jakarta, Tangerang, Depok, Bogor, Bekasi, dan sekitarnya.'
+  'Daftar harga promo mobil Hyundai terbaru. Dapatkan penawaran terbaik untuk pembelian mobil Hyundai di dealer Jogja, Sleman, Bantul, Kulon Progo, dan sekitarnya.'
 
 export const metadata = generateSEO(title, description, URL)
 

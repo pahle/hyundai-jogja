@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 
 import { ENV } from '~/lib/contants'
 import { navMenu } from '~/components/layout/navbar'
+import listArticle from '~/data/list-article.json'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const WEBSITE_URL = ENV.NEXT_PUBLIC_WEBSITE_URL
@@ -19,5 +20,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date().toISOString().split('T')[0]
   }))
 
-  return [...routes]
+  const articles = listArticle.map(article => ({
+    url: `${WEBSITE_URL}/artikel/${article.slug}`,
+    lastModified: new Date().toISOString().split('T')[0]
+  }))
+
+  return [...routes, ...articles]
 }
