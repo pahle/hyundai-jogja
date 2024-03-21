@@ -2,10 +2,12 @@ import { Home, Phone, Menu } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 
+import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet'
+
 export const Navbar = () => {
   return (
     <nav>
-      <div className='bg-app-blue-200'>
+      <div className='bg-app-blue-200 hidden lg:block'>
         <div className='container text-white py-2 md:text-sm text-xs font-medium flex lg:flex-row flex-col items-center text-center md:text-left justify-between gap-x-5 gap-y-2'>
           <p className='flex items-center gap-2'>
             <Home size={14} className='shrink-0 hidden md:block' />
@@ -23,9 +25,7 @@ export const Navbar = () => {
         <Link href='/'>
           <Image src='/logo.webp' alt='Logo' width={148} height={50} />
         </Link>
-        <button className='block lg:hidden'>
-          <Menu className='text-app-blue-200' />
-        </button>
+        <NavbarMobile />
         <ul className='lg:flex hidden items-center gap-4'>
           {navMenu.map(menu => (
             <li key={menu.name}>
@@ -37,6 +37,30 @@ export const Navbar = () => {
         </ul>
       </div>
     </nav>
+  )
+}
+
+const NavbarMobile = () => {
+  return (
+    <Sheet>
+      <SheetTrigger className='block lg:hidden ml-auto'>
+        <Menu className='text-app-blue-200' />
+      </SheetTrigger>
+      <SheetContent>
+        <Link href='/'>
+          <Image src='/logo.webp' alt='Logo' width={148} height={50} />
+        </Link>
+        <ul className='flex items-center gap-4 flex-col mt-10'>
+          {navMenu.map(menu => (
+            <li key={menu.name}>
+              <Link href={menu.link} className='font-semibold text-app-blue-200 text-xl'>
+                {menu.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </SheetContent>
+    </Sheet>
   )
 }
 
