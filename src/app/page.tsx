@@ -12,7 +12,7 @@ function DeliveryOrder() {
           {listDelivery.map((delivery, index) => (
             <div key={index} className="group relative">
               <div className="w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80">
-                <img
+                <Image
                   src={delivery.imageSrc}
                   alt={delivery.imageAlt}
                   className="h-full w-full object-cover object-center lg:h-full lg:w-full"
