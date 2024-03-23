@@ -3,6 +3,27 @@ import Link from 'next/link'
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '~/components/ui/carousel'
 import listMobil from '~/data/list-mobil.json'
+import listDelivery from '~/data/list-delivery.json'
+
+function DeliveryOrder() {
+  return (
+    <div className="bg-white">
+        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+          {listDelivery.map((delivery, index) => (
+            <div key={index} className="group relative">
+              <div className="w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80">
+                <img
+                  src={delivery.imageSrc}
+                  alt={delivery.imageAlt}
+                  className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+    </div>
+  )
+}
 
 export default function Home() {
   return (
@@ -46,6 +67,15 @@ export default function Home() {
               </CarouselContent>
               <CarouselNext className='static shrink-0 bg-transparent border-none' />
             </Carousel>
+          </div>
+        </div>
+      </section>
+
+      <section className='lg:pb-12 pb-6 bg-app-light-brown'>
+        <div className='bg-white lg:py-12 py-6'>
+          <div className='container space-y-5'>
+            <h1 className='lg:text-5xl text-3xl font-bold text-center'>Delivery Order</h1>
+                <DeliveryOrder />
           </div>
         </div>
       </section>
