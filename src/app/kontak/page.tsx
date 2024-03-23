@@ -21,7 +21,7 @@ export default function Kontak() {
             <p>Jl. Laksda Adisucipto Jl. Kembang Raya No.KM, RW.9, Karangploso, Maguwoharjo, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281</p>
             <h3 className='text-xl font-bold'>No. Telp</h3>
             <p>
-              Whatsapp: <a href=''>+62 877-1808-2511</a> (Yoana)
+              Whatsapp: <a href='https://wa.me/6287718082511' target='_blank'>+62 877-1808-2511</a> (Yoana)
             </p>
           </div>
           <iframe

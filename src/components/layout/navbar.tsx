@@ -15,9 +15,7 @@ export const Navbar = () => {
           </p>
           <p className='flex items-center gap-2'>
             <Phone size={14} className='shrink-0 hidden md:block' />
-            <a href='#'>+62 877-1808-2511</a>
-            <span> | </span>
-            <a href='#'>+62 812-2808-0040 (Yoana)</a>
+            <a href='https://wa.me/6287718082511' target='_blank'>+62 877-1808-2511 (Yoana)</a>
           </p>
         </div>
       </div>

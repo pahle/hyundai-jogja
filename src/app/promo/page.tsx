@@ -4,6 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '~/
 import { generateSEO } from '~/lib/generate-seo'
 import { ENV } from '~/lib/contants'
 import listMobil from '~/data/list-mobil.json'
+import currencyFormat  from '~/components/CurrencyFormat'
 
 const title = 'Daftar Harga Promo'
 const URL = `${ENV.NEXT_PUBLIC_WEBSITE_URL}/promo`
@@ -25,13 +26,13 @@ export default function Promo() {
                 <AccordionContent>
                   <div className='relative'>
                     <Image src={mobil.image} alt={mobil.name} width={1254} height={400} className='max-w-[1254px] max-h-[400px] object-cover object-center' />
-                    <p className='absolute right-0 bottom-0 lg:text-3xl text-xl font-medium p-4 bg-app-blue-200 text-white rounded-lg'>{mobil.basePrice}</p>
+                    <p className='absolute right-0 bottom-0 lg:text-3xl text-xl font-medium p-4 bg-app-blue-200 text-white rounded-lg'>{currencyFormat(mobil.basePrice)}</p>
                   </div>
                   <ul className='w-full my-4'>
                     {mobil.types.map((type, index) => (
                       <li key={index} className='flex items-center justify-between gap-2.5 py-2 first:border-t-2 last:border-b-2 border-black text-xl text-black'>
                         <p className='px-2'>{type.name}</p>
-                        <p className='px-2'>{type.price}</p>
+                        <p className='px-2'>{currencyFormat(type.price)}</p>
                       </li>
                     ))}
                   </ul>
