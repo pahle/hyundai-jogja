@@ -105,18 +105,6 @@ export default function Home() {
 const newsCarousel = [
   {
     title: 'Standar baru perawatan mobil yang terbaik – hyundai before service',
-    desc: 'Hyundai Solo Baru menghadirkan layanan purna jual yang unggul dengan Hyundai Before Service. Pada tanggal 25-26 November dan 9-10 Desember 2023, program khusus ini memberikan standar perawatan...'
+    desc: 'Hyundai Jogja Adisucipto menghadirkan layanan purna jual yang unggul dengan Hyundai Before Service. Pada tanggal 25-26 November dan 9-10 Desember 2023, program khusus ini memberikan standar perawatan...'
   },
-  {
-    title: 'Standar baru perawatan mobil yang terbaik – hyundai before service',
-    desc: 'Hyundai Solo Baru menghadirkan layanan purna jual yang unggul dengan Hyundai Before Service. Pada tanggal 25-26 November dan 9-10 Desember 2023, program khusus ini memberikan standar perawatan...'
-  },
-  {
-    title: 'Standar baru perawatan mobil yang terbaik – hyundai before service',
-    desc: 'Hyundai Solo Baru menghadirkan layanan purna jual yang unggul dengan Hyundai Before Service. Pada tanggal 25-26 November dan 9-10 Desember 2023, program khusus ini memberikan standar perawatan...'
-  },
-  {
-    title: 'Standar baru perawatan mobil yang terbaik – hyundai before service',
-    desc: 'Hyundai Solo Baru menghadirkan layanan purna jual yang unggul dengan Hyundai Before Service. Pada tanggal 25-26 November dan 9-10 Desember 2023, program khusus ini memberikan standar perawatan...'
-  }
 ]
