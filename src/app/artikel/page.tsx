@@ -20,7 +20,7 @@ export default function Artikel() {
       <section className='container grid lg:grid-cols-3 md:grid-cols-2 lg:gap-8 md:gap-4 gap-2'>
         {listArticle.map((article, index) => (
           <div key={index} className='border rounded-lg'>
-            <Image src={article.image} alt={article.title} width={406} height={250} className='object-cover object-center aspect-video' />
+            <Image src={article.image} alt={article.title} width={500} height={500} className='object-cover object-center aspect-square' />
             <div className='space-y-2 p-4'>
               <p className='text-xl font-semibold'>{article.title}</p>
               <p className='line-clamp-2'>
