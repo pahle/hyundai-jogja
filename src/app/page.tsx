@@ -15,7 +15,9 @@ function DeliveryOrder() {
                 <Image
                   src={delivery.imageSrc}
                   alt={delivery.imageAlt}
-                  className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                  width={1000}
+                  height={1000}
+                  className="h-full w-full aspect-square object-cover object-center lg:h-full lg:w-full"
                 />
               </div>
             </div>
