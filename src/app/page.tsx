@@ -7,22 +7,22 @@ import listDelivery from '~/data/list-delivery.json'
 
 function DeliveryOrder() {
   return (
-    <div className="bg-white">
-        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          {listDelivery.map((delivery, index) => (
-            <div key={index} className="group relative">
-              <div className="w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80">
-                <Image
-                  src={delivery.imageSrc}
-                  alt={delivery.imageAlt}
-                  width={1000}
-                  height={1000}
-                  className="h-full w-full aspect-square object-cover object-center lg:h-full lg:w-full"
-                />
-              </div>
+    <div className='bg-white'>
+      <div className='grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
+        {listDelivery.map((delivery, index) => (
+          <div key={index} className='group relative'>
+            <div className='w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80'>
+              <Image
+                src={delivery.imageSrc}
+                alt={delivery.imageAlt}
+                width={1000}
+                height={1000}
+                className='h-full w-full aspect-square object-cover object-center lg:h-full lg:w-full'
+              />
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
@@ -45,8 +45,8 @@ export default function Home() {
         <div className='grid lg:grid-cols-3 md:grid-cols-2'>
           {listMobil.map((mobil, index) => (
             <div key={index} className='flex flex-col items-center'>
-              <Image src={mobil.image} alt={mobil.name} width={408} height={200} className='h-[200px] object-cover object-center' />
               <Link className='my-4 text-2xl font-medium' href={`/mobil#${mobil.image.replaceAll('.webp', '').slice(1)}`}>
+              <Image src={mobil.image} alt={mobil.name} width={408} height={200} className='h-[200px] object-cover object-center' />
                 {mobil.name}
               </Link>
             </div>
@@ -77,7 +77,7 @@ export default function Home() {
         <div className='bg-white lg:py-12 py-6'>
           <div className='container space-y-5'>
             <h1 className='lg:text-5xl text-3xl font-bold text-center'>Delivery Order</h1>
-                <DeliveryOrder />
+            <DeliveryOrder />
           </div>
         </div>
       </section>
@@ -108,5 +108,5 @@ const newsCarousel = [
   {
     title: 'Standar baru perawatan mobil yang terbaik – hyundai before service',
     desc: 'Hyundai Jogja Adisucipto menghadirkan layanan purna jual yang unggul dengan Hyundai Before Service. Pada tanggal 25-26 November dan 9-10 Desember 2023, program khusus ini memberikan standar perawatan...'
-  },
+  }
 ]
