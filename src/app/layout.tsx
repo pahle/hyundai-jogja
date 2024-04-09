@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
 
 import { Navbar } from '~/components/layout/navbar'
@@ -51,6 +52,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <div className='min-h-[90vh]'>{children}</div>
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-G858T02Y1F" />
     </html>
   )
 }
